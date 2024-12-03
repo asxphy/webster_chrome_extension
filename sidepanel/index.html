@@ -1,0 +1,38 @@
+<!--
+  Copyright 2024 Google LLC
+  SPDX-License-Identifier: Apache-2.0
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark light" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Prompt API Playground</title>
+        <script>
+            if (!isSecureContext) location.protocol = "https:";
+        </script>
+        <script src="script.js" type="module"></script>
+    </head>
+    <body>
+        <div id="error-message"></div>
+        <div id="prompt-area">
+            <div>
+                <label>
+                    Prompt
+                    <textarea id="prompt-input"></textarea>
+                </label>
+                <button type="button" id="submit-button">Submit prompt</button>
+                <button type="button" id="reset-button">Reset session</button>
+            </div>
+
+            <h2>Conversation</h2>
+            <div id="response-area"></div>
+        </div>
+    </body>
+</html>
